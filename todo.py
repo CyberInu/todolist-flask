@@ -2,9 +2,6 @@ from flask import Flask, jsonify, abort, request, make_response
 from flaskext.mysql import MySQL
 from flask_cors import CORS
 
-from dotenv import load_dotenv
-load_dotenv()
-
 app = Flask(__name__)
 CORS(app)
 
