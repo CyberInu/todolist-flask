@@ -9,9 +9,9 @@ app = Flask(__name__)
 CORS(app)
 
 # Configuring MySQL database
-app.config['MYSQL_DATABASE_HOST'] = 'todo-database-server'
-app.config['MYSQL_DATABASE_USER'] = 'chandra'
-app.config['MYSQL_DATABASE_PASSWORD'] = 'Chandra@123'
+app.config['MYSQL_DATABASE_HOST'] = 'localhost'
+app.config['MYSQL_DATABASE_USER'] = 'ubuntu'
+app.config['MYSQL_DATABASE_PASSWORD'] = 'password'
 app.config['MYSQL_DATABASE_DB'] = 'todo_db'
 app.config['MYSQL_DATABASE_PORT'] = 3306
 mysql = MySQL()
@@ -152,4 +152,4 @@ def bad_request(error):
 if __name__== '__main__':
     init_todo_db()
 
-    app.run(host='127.0.0.1', port=80)
+    app.run(host='127.0.0.1', port=8080)
