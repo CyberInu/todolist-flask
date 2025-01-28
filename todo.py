@@ -150,4 +150,4 @@ def bad_request(error):
 if __name__== '__main__':
     init_todo_db()
 
-    app.run(host='127.0.0.1', port=8080)
+    app.run(host='127.0.0.1', port=80)
