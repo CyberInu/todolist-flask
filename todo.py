@@ -93,7 +93,7 @@ def remove_task(task):
 @app.route('/')
 def home():
     """Home route that returns a welcome message."""
-    return "Welcome to to-do API Service"
+    # return "Welcome to to-do API Service"
     return send_file('index.html')
 
 @app.route('/todos', methods=['GET'])
