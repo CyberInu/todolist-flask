@@ -1,3 +1,6 @@
+Have Terraform create the resources `terraform apply`
+Have Terraform create and output json file to capture the IP address of ec2 Instance `terraform output -json > terraform-output.json`
+Run Ansible Flask role which does the following:
 Create a mysql db `sudo apt install mysql-server`
 Create table within the MySql DB `sudo mysql -u root -e "CREATE DATABASE todo_db";`
 Create a user for the mysql db `sudo mysql -u root -e "CREATE USER 'paige'@'localhost' IDENTIFIED BY 'password'";`
