@@ -14,19 +14,5 @@ Run gunicorn <br>`gunicorn -w --bind 0.0.0.0:8000 wsgi:app`<br>
 Check to see if page loaded correctly confirm database works<br>
 
 <br>Architecture Diagram<br>
-
-+---------------------+  
-|  Security Group     |  
-| +----------------+  |  
-| |  EC2 Instance   |  |  
-| | +------------+ |  |  
-| | |  Flask App |<----+  
-| | |  (Port 80)  |  |  
-| | +------------+ |  |  
-| | +------------+ |  |  
-| | | MySQL DB   |  |  
-| | | (Port 3306)|  |  
-| | +------------+ |  |  
-| +----------------+  |  
-+---------------------+  
+![Todo list app home](img/arch_diagram.png)
 
